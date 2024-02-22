@@ -99,7 +99,7 @@ public class Employee {
 
 			Connection con = ConnectionDB.CreateC();
 			Statement stmt = con.createStatement();
-			String q = "UPDATE employees SET name = ?,phoneNo=?,city=? where id=?";
+			String q = "UPDATE employees SET name = ?,phoneNo=?,city=? ";
 
 			PreparedStatement pstmt = con.prepareStatement(q);
 			
